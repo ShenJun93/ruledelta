@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RuleDelta — see what changed before you commit</title><link rel="stylesheet" href="/style.css"></head>
+<body><main><header><div class="eyebrow">OPEN-WEIGHT · LOCAL-FIRST · HUMAN CONTROL</div>
+<h1>Rule<span>Delta</span></h1><p class="lead">Catch the one changed sentence that can cost a side hustle its payout.</p>
+<p class="sub">Compare two versions of a contest brief, freelance scope, or grant rule. A real local MiniLM model aligns related clauses, while a Mastra workflow requires human review. Not legal advice.</p></header>
+<section class="workspace"><div class="columns">
+<div class="pane"><div class="pane-label">01 / PREVIOUS TERMS</div><label for="previous">Older version</label>
+<textarea id="previous" maxlength="16000" rows="10">Example Side Hustle Challenge runs October 15 through October 20.
+Winner gets $500 USD cash.
+AI-generated prose is allowed with disclosure.</textarea></div>
+<div class="pane"><div class="pane-label">02 / UPDATED TERMS</div><label for="current">Newer version</label>
+<textarea id="current" maxlength="16000" rows="10">Example Side Hustle Challenge runs October 22 through October 27.
+Winner gets $500 platform credits, not cash.
+AI-generated prose is not allowed.</textarea></div></div>
+<div class="toolbar"><button id="go">Compare locally →</button><span id="status" role="status">Fictional demo only. No real contest is represented.</span></div>
+</section>
+<section id="results" class="results" aria-live="polite"><div class="waiting">Changes, exact source quotations and human-review gates will appear here.</div></section>
+<footer>Model: Xenova/all-MiniLM-L6-v2 (open weights) · Workflow: Mastra · Both versions analyzed on this device · No automatic eligibility judgment</footer>
+</main><script type="module" src="/app.js"></script></body></html>
